@@ -23,3 +23,8 @@ spring:
           uri: lb://song-service
           predicates:
             - Path=/songs/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
