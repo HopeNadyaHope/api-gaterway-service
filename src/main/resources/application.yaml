@@ -32,3 +32,17 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+logstash:
+  host: ${LOGSTASH_HOST:localhost}
+  port: ${LOGSTASH_PORT:5000}
+  queue-size: 512
+
+apm:
+  url: ${APM_URL:http://localhost:8200}
+  logLevel: info
+  usePathAsTransactionName: true
+  transactionNameGroups: GET /resources/*,PUT /resources/permanent/*
+
+monitoring:
+  uri: ${KIBANA_URI:http://localhost:5601}
