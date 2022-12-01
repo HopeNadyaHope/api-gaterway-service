@@ -21,6 +21,7 @@ dependencies {
     implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:${eureka_version}"
     implementation "net.logstash.logback:logstash-logback-encoder:${logstash_version}"
     implementation "co.elastic.apm:apm-agent-attach:${apm_version}"
+    implementation "org.springframework.cloud:spring-cloud-starter-sleuth:${sleuth_version}"
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junit_version}"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junit_version}"
